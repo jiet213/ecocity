@@ -1,0 +1,6 @@
+#mapDiv{position: relative;width: 770px;height: 650px;margin-top: 10px; padding:0;overflow: hidden;}
+#layerControlDiv{position:relative; width:170px;height: 135px;margin-top: 15px;margin-left: 30px;background: #FFFFFF;display: block;text-align: left;line-height: 1.8em;z-index: 200;}
+#title{background-color: #7ba12a;width:225px;height: 33px;margin-top: 15px;color: #FFFFFF;font:  bold 15px SimSun,arial;text-align: center; line-height:33px;}
+#toolbar{position: absolute;width:450px;height:32px;margin:0; background-color:#f5f3f3;z-index: 400;}
+#opentoolbar{position: absolute;width:32px;height:32px;margin:0;z-index: 500;}
+#place{position: absolute;width:140px;height:140px;left:100px;top:100px; background-color:#DFFFDF;text-align: left;line-height: 2em;z-index: 99999;}

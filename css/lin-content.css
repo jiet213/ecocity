@@ -1,0 +1,71 @@
+﻿/*具体介绍生态城各个方面的css文件*/
+*{ margin:0; padding:0;}
+body{ background:#fff repeat-x top left; font-family:"Lucida Grande", "Lucida Sans", Arial, Helvetica, sans-serif; font-size:10px; color:#4c4c4c;}
+ul{ list-style:none;}
+
+.lin-congtent{width:690px; float:left;  background-color:White;}
+
+.lin-contleft-title{height:30px;width:690px; padding-top:4px;  background-color:#5488B7; text-align:left;}
+.lin-contleft-title1{height:30px;width:690px; margin:5px 0 0 0;  background-color:#5488B7; text-align:left;}
+.lin-title{font-size:16px; font-weight:bold; color:White;margin:8px 0px 5px 10px;}
+.lin-picleft{margin-top:5px; padding: 8px 15px 8px 20px; border-color:#4A80B0; border-width:1px;border-style:solid; width:305px; height:385px; float :left ; background-color:#EBEFF7; }
+.lin-pinctitle{ font-size:16px; font-weight:bold; color:#3366BB;}
+.lin-pincinfo{font-size:14px; color:Black; text-indent:20px;}
+.zhibeiimg {width:295px;}
+.lin-picright{margin-top:5px; padding: 8px 15px 8px 20px;border-color:#4A80B0; border-width:1px; border-style:solid; width:305px; height:385px; float :right ; background-color:#EBEFF7;}
+.lin-righttitle{margin-top:5px; background-color:#4A80B0;  height:30px; padding-top:4px;}
+
+.lifeTravel
+	{
+	border:0px #4A80B0 solid;
+	margin-top:1px;
+	margin-bottom:10px;
+	clear:both;
+	}
+.lifeTravel .lifeTravelNav
+	{
+	display:block;
+	height:25px;
+	background:#ebeff8 url(/m2/i/line08.gif) repeat-x left bottom;
+	padding-left:13px;
+	}
+.lifeTravel .lifeTravelNav li
+	{
+	float:left;
+	line-height:24px;
+	}
+.lifeTravel .lifeTravelNav li a
+	{
+	display:block;
+	width:85px;
+	height:24px;
+	line-height:24px;
+	border:1px #ebeff8 solid;
+	border-bottom:1px #c1d1e8 solid;
+	border-top:none;
+	text-align:center;
+color:black;
+font-weight:bold;
+cursor:default;
+	}
+.lifeTravel .lifeTravelNav li.move a
+	{
+	background-color:#fff;
+	border:1px #c1d1e8 solid;
+	border-bottom:1px #fff solid;
+	border-top:none;
+	}
+
+.lifeTravel div ul
+{
+clear:both;
+_margin-top:-5px;
+padding:8px 0 0 15px;
+}
+.lifeTravel div ul li
+{
+	background:url(/m2/i/dian09.gif) no-repeat 2px 10px;
+	line-height: 1.8em;
+padding-left:12px;
+}
+

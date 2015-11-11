@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>环境空气监测概况</title>
+<script  type="text/javascript" charset="utf-8">
+  var login;
+  login=sessionStorage.getItem("usrname");
+  if (login==null)
+  {
+     window.location.href="../index.html"; 
+  }
+</script>
+<style type="text/css">
+	    .tb01{
+	        border-bottom:1px solid #262626; 
+	        border-top:1px solid #262626; 
+	        border-left:1px solid #262626; 
+	        border-right:1px solid #262626; 
+	        text-align:center;
+	        height:70px;
+	        font-size: 14px;
+	    }
+	    .tb00{
+	        border-bottom:1px solid #262626; 
+	        border-top:1px solid #262626; 
+	        border-left:1px solid #262626; 
+	        border-right:1px solid #262626; 
+	        text-align:center;
+	        height:40px;
+	        font-size: 14px;
+	    }
+	    .tb02{
+	        border-bottom:1px solid #262626; 
+	        border-top:1px solid #262626; 
+	        border-left:1px solid #262626; 
+	        border-right:1px solid #262626;     
+	        text-align:left;
+	        padding-left:3px;
+	        height:70px;
+	        font-size: 14px;
+	    }
+    </style>
+
+</head>
+<body>
+	<div id="Div1" style=" text-align: center
+                ; position: absolute; z-index: 1000; background-color: White; width: 700px;
+                height: 550px;">
+                <h3 style="margin-left: 6px;">空气质量指数范围及相应的空气质量类别对应表</h3>
+                <table width="98%" border="0" cellpadding="0" cellspacing="0" id="__01" style="margin-left: 8px;
+                    text-align: center; margin-top: 10px;">
+                    
+                    <tr class="tab_01">
+                        <td class="tb00" width="90" style="font-size: 14px; font-weight: bold;">
+                            空气质量指数
+                        </td>
+                        <td class="tb00" width="90" style="font-size: 14px; font-weight: bold;">
+                            空气质量级别
+                        </td>
+                        <td class="tb00" width="90" style="font-size: 14px; font-weight: bold;">
+                            空气质量状况
+                        </td>
+                        <td class="tb00" width="80" style="font-size: 14px; font-weight: bold;">
+                            表示颜色
+                        </td>
+                        <td class="tb00" width="100" style="font-size: 14px; font-weight: bold;">
+                            对健康影响情况
+                        </td>
+                        <td class="tb00" width="100" style="font-size: 14px; font-weight: bold;">
+                            建议采取的措施
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tb01">
+                            0～50</td>
+                        <td class="tb01">
+                            一级</td>
+                        <td class="tb01">
+                            优</td>
+                        <td style="background-color: #00E400;" class="tb01">绿色
+                        </td>
+                        <td class="tb02">
+                            空气质量令人满意，基本无空气污染</td>
+                        <td class="tb02">
+                            各类人群可正常活动</td>
+                    </tr>
+                    <tr>
+                        <td class="tb01">
+                            51～100</td>
+                        <td class="tb01">
+                            二级</td>
+                        <td class="tb01">
+                            良</td>
+                        <td style="background-color: Yellow" class="tb01">黄色
+                        </td>
+                        <td class="tb02">
+                            空气质量可接受，但某些污染物可能对极少数异常敏感人群健康有较弱影响</td>
+                        <td class="tb02">
+                            极少数异常敏感人群应减少户外活动</td>
+                    </tr>
+                    <tr>
+                        <td class="tb01">
+                            101～150</td>
+                        <td class="tb01">
+                            三级</td>
+                        <td class="tb01">
+                            轻度污染</td>
+                        <td style="background-color: #FFA500;" class="tb01">橙色
+                        </td>
+                        <td class="tb02">
+                            易感人群症状有轻度加剧，健康人群出现刺激症状</td>
+                        <td class="tb02">
+                            儿童、老年人及心脏病、呼吸系统疾病患者应减少长时间、高强度的户外锻炼</td>
+                    </tr>
+                    <tr>
+                        <td class="tb01">
+                            151～200</td>
+                        <td class="tb01">
+                            四级</td>
+                        <td class="tb01">
+                            中度污染</td>
+                        <td style="background-color: Red;" class="tb01">红色
+                        </td>
+                        <td class="tb02">
+                            进一步加剧易感人群症状，可能对健康人群心脏、呼吸系统有影响</td>
+                        <td class="tb02">
+                            儿童、老年人及心脏病、呼吸系统疾病患者避免长时间、高强度的户外锻炼，一般人群适量减少户外运动</td>
+                    </tr>
+                    <tr>
+                        <td class="tb01">
+                            201～300</td>
+                        <td class="tb01">
+                            五级</td>
+                        <td class="tb01">
+                            重度污染</td>
+                        <td style="background-color: #800080;" class="tb01">紫色
+                        </td>
+                        <td class="tb02">
+                            心脏病和肺病患者症状显著加剧，运动耐受力降低，健康人群普遍出现症状</td>
+                        <td class="tb02">
+                            儿童、老年人及心脏病、肺病患者应停留在室内，停止户外运动，一般人群减少户外运动</td>
+                    </tr>
+                    <tr>
+                        <td class="tb01">
+                            > 300</td>
+                        <td class="tb01">
+                            六级</td>
+                        <td class="tb01">
+                            严重污染</td>
+                        <td style="background-color: #7E0023;" class="tb01">褐紫色
+                        </td>
+                        <td class="tb02">
+                            健康人群运动耐受力降低，有明显强烈症状，提前出现某些疾病</td>
+                        <td class="tb02">
+                            儿童、老年人和病人应停留在室内，避免体力消耗，一般人群避免户外活动</td>
+                    </tr>
+                </table>
+                
+            </div>
+
+
+</body>
+</html>

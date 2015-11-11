@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>声环境监测概况</title>
+<script  type="text/javascript" charset="utf-8">
+  var login;
+  login=sessionStorage.getItem("usrname");
+  if (login==null)
+  {
+     window.location.href="../index.html"; 
+  }
+</script>
+<style type="text/css">
+	    .tb01{
+	        border-bottom:1px solid #262626; 
+	        border-top:1px solid #262626; 
+	        border-left:1px solid #262626; 
+	        border-right:1px solid #262626; 
+	        text-align:center;
+	        height:40px;
+	        font-size: 14px;
+	    }
+	    .tb00{
+	        border-bottom:1px solid #262626; 
+	        border-top:1px solid #262626; 
+	        border-left:1px solid #262626; 
+	        border-right:1px solid #262626; 
+	        text-align:center;
+	        height:40px;
+	        font-size: 14px;
+	    }
+	    .tb02{
+	        border-bottom:1px solid #262626; 
+	        border-top:1px solid #262626; 
+	        border-left:1px solid #262626; 
+	        border-right:1px solid #262626;     
+	        text-align:left;
+	        padding-left:3px;
+	        height:70px;
+	        font-size: 14px;
+	    }
+    </style>
+
+</head>
+<body>
+	<div id="Div1" style=" text-align: center
+                ; position: absolute; z-index: 1000; background-color: White; width: 700px;
+                height: 550px;">
+                <h3 style="margin-left: 6px;">声环境类别及相应的功能划分对应表</h3>
+                <table width="98%" border="1" cellpadding="0" cellspacing="0" id="__01" style="margin-left: 8px;
+                    text-align: center; margin-top: 10px;">
+                    
+                    <tr class="tab_01">
+                        <td class="tb00" width="50" rowspan="2" colspan="2" style="font-size: 14px; font-weight: bold;">
+                            声环境类别
+                        </td>
+                        <td class="tb00" width="140" colspan="2" style="font-size: 14px; font-weight: bold;">
+                            时段
+                        </td>
+                        <td class="tb00" width="80" rowspan="2" style="font-size: 14px; font-weight: bold;">
+                            表示颜色
+                        </td>
+                        <td class="tb00" width="250" rowspan="2" style="font-size: 14px; font-weight: bold;">
+                            适用功能区
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tb01" width="100">
+                            昼间</td>
+                        <td class="tb01"width="100">
+                            夜间</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            0类</td>
+                        <td class="tb01">
+                            50</td>
+                        <td class="tb01">
+                            40</td>
+                        <td style="background-color: #00E400" class="tb01">
+                        </td>
+                        <td class="tb02">
+                            康复疗养区等特别需要安静的区域</td>
+                    </tr>
+                    <tr>
+                        <td class="tb01" colspan="2">
+                            1类</td>
+                        <td class="tb01">
+                            55</td>
+                        <td class="tb01">
+                            45</td>
+                        <td style="background-color: #00E400;" class="tb01">
+                        </td>
+                        <td class="tb02">
+                            以居民住宅、医疗卫生、文化教育、科研设计、行政办公为主要功能，需要保持安静的区域</td>
+                    </tr>
+                    <tr>
+                        <td class="tb01" colspan="2">
+                            2类</td>
+                        <td class="tb01">
+                            60</td>
+                        <td class="tb01">
+                            50</td><td style="background-color: Yellow;" class="tb01">
+                        </td>
+                        <td class="tb02">
+                            以商业金融、集市贸易为主要功能，或者居住、商业、工业混杂，需要维护住宅安静的区域</td>
+                    </tr>
+                    <tr>
+                        <td class="tb01" colspan="2">
+                            3类</td>
+                        <td class="tb01">
+                            65</td>
+                        <td class="tb01">
+                            55</td>
+                        <td style="background-color: #FFA500;" class="tb01">
+                        </td>
+                        <td class="tb02">
+                            以工业生产、仓库物流为主要功能，需要防止工业噪声对周围环境生产严重影响的区域</td>
+                    </tr>
+                    <tr>
+                        <td class="tb00" rowspan="2" height="40" width="70">
+                            4类</td>
+                        <td  height="10">
+                            4a</td>
+                        <td class="tb01">
+                            70</td>
+                        <td class="tb01">
+                            55</td>
+                        <td style="background-color: Red;" class="tb01" rowspan="2">
+                        </td>
+                        <td class="tb02">
+                            高速公路、一级公路、二级公路、城市快速路、城市主干路、城市次干路、城市轨道交通（地面段）、内河航道两侧区域</td>
+                    </tr>
+                    <tr>
+                        <td  height="10">
+                            4b</td>
+                        <td class="tb01">
+                            70</td>
+                        <td class="tb01">
+                            60</td>
+                        <td class="tb02">
+                            铁路干线两侧区域</td>
+                    </tr>
+                </table>
+                
+            </div>
+
+
+</body>
+</html>

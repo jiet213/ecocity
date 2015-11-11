@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<link href="../css/insert.css" rel="stylesheet" media="screen" type="text/css" />
+<script src="../js/date.js" type="text/javascript"></script>
+<script src="../js/jquery-1.9.1.js"></script>
+<script  type="text/javascript" charset="utf-8">
+  var login;
+  login=sessionStorage.getItem("usrname");
+  if (login==null)
+  {
+     window.location.href="../index.html"; 
+  }
+</script>
+</head>
+<body>
+<center>
+	<div id="main">
+		<div id="name">水质监测数据录入</div>
+		<div id="content">
+			<form name="frmInsert" action="water.php" method="post"  onsubmit="return docheck_W();">
+				<table id="table2">
+					<colgroup width="16.7%" span="6"></colgroup>
+					<tr>
+						<td colspan="3">观测台站：&nbsp;&nbsp;
+						<input type="text" required="required" name="Sample" class="textW" onfocus="focusS(this)"></td>	
+						<td colspan="3">监测时间：&nbsp;&nbsp;
+							<select name="Date" id="date">
+								<option value="null">请选择</option>
+								<option value="2014.01">2014年1月</option>
+								<option value="2014.02">2014年2月</option>
+								<option value="2014.03">2014年3月</option>
+								<option value="2014.04">2014年4月</option>
+								<option value="2014.05">2014年5月</option>
+								<option value="2014.06">2014年6月</option>
+								<option value="2014.07">2014年7月</option>
+								<option value="2014.08">2014年8月</option>
+								<option value="2014.09">2014年9月</option>
+								<option value="2014.10">2014年10月</option>
+								<option value="2014.11">2014年11月</option>
+								<option value="2014.12">2014年12月</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="6"></td>
+					</tr>
+					<tr>
+						<td>叶绿素:</td>
+						<td ><input type="text" required="required" class="textW" name="Chlorophyll" value="15.5" onfocus="focusS(this)" onblur="blurD(this)"></td>
+						<td>悬浮物:</td>
+						<td><input type="text" required="required" class="textW" name="SS" value="15.5" onfocus="focusS(this)" onblur="blurD(this)"></td>
+						<td>溶解氧:</td>
+						<td><input type="text" required="required" class="textW" name="DO" value="15.5" onfocus="focusS(this)" onblur="blurD(this)"></td>
+					</tr>
+					<tr>
+						<td colspan="6"></td>
+					</tr>
+					<tr>
+						<td>高锰酸盐:</td>
+						<td><input type="text" required="required" class="textW" name="CODMn" value="15.5" onfocus="focusS(this)" onblur="blurD(this)"></td>
+						<td>总磷:</td>
+						<td><input type="text" required="required" class="textW" name="TP" value="15.5" onfocus="focusS(this)" onblur="blurD(this)"></td>
+						<td>总氮:</td>
+						<td><input type="text" required="required" class="textW" name="TN" value="15.5" onfocus="focusS(this)" onblur="blurD(this)"></td>
+					</tr>
+					<tr>
+						<td colspan="6"></td>
+					</tr>
+					<tr>
+						<td>流速:</td>
+						<td ><input type="number" required="required" min="1" class="textW" name="FlowRate" value="10" onfocus="focusS(this)" onblur="blurI(this)"></td>
+						<td>水温:</td>
+						<td><input type="text" required="required" class="textW" name="WaterTemp" value="15.5" onfocus="focusS(this)" onblur="blurD(this)"></td>
+						<td>透明度:</td>
+						<td><input type="number" required="required" min="1" class="textW" name="Transparency" value="10" onfocus="focusS(this)" onblur="blurI(this)"></td>
+					</tr>
+					<tr>
+						<td colspan="6"></td>
+					</tr>
+					<tr>
+						<td>PH值:</td>
+						<td ><input type="text" required="required" class="textW" name="PH" value="15.5" onfocus="focusS(this)" onblur="blurD(this)"></td>
+						<td>生化需氧:</td>
+						<td><input type="text" required="required" class="textW" name="BOD5" value="15.5" onfocus="focusS(this)" onblur="blurD(this)"></td>
+						<td>氨氮:</td>
+						<td ><input type="text" required="required" class="textW" name="NH34" value="15.5" onfocus="focusS(this)" onblur="blurD(this)"></td>
+					</tr>
+					<tr>
+						<td colspan="6"></td>
+					</tr>
+					<tr>
+						<td colspan="3"><input type="submit" value="确 定" id="btn"></td>
+						<td colspan="3"><input type="reset" value="重 置" id="btn"></td>
+					</tr>
+				</table>
+			</form>	
+			<div id="tips">
+				<div id="beizhu">
+					备注：<br>
+					1.&nbsp;&nbsp;输入正确的观测台站，并选择相应的监测时间；<br>
+					2.&nbsp;&nbsp;正确的输入各监测指标的监测值；<br>
+					3.&nbsp;&nbsp;录入数据前需要确认所录入的信息。
+				</div>
+			</div>
+			
+		</div>
+	<div>
+</center>
+</body>
+</html>

@@ -1,0 +1,78 @@
+#main{width:660px;height: 615px;align:center;}
+#name
+{
+	font-family:"微软雅黑", "SimSun",Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 20px;
+}
+#content
+{
+	margin-top: 50px;
+	margin-left: -20px;
+}
+#table1
+{
+	text-align: center;
+	line-height: 2em;
+	width:500px;
+}
+#table2
+{
+	text-align: center;
+	line-height: 2em;
+	width:570px;
+}
+tr
+{
+	height:20px;
+}
+.text
+{
+	width: 80px;
+	color:#999999;
+	text-align: center;
+}
+.textW
+{
+	width: 80px;
+	color:#999999;
+	text-align: center;
+	margin-left: -15px;
+}
+select
+{
+	width: 92px;
+	text-align: center;
+}
+#tips
+{
+	margin-top: 50px;
+	width: 620px;
+	height: 150px;
+
+
+}
+#beizhu 
+{
+	text-align: left;
+	margin-top: 20px;
+	margin-left: 30px;
+	font-family:"微软雅黑", "SimSun",Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color:#8E8E8E;
+	line-height: 2em;
+}
+#btn
+{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	color: #FFFFFF; 
+	width: 80px;
+	height: 30px;
+    text-align: center;
+    cursor: pointer; 
+    background: #73BF00;
+    border: 1px;
+    border-radius: 6px;
+}

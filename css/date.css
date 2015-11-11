@@ -1,0 +1,44 @@
+/* 数据导入css */
+#chooseindex
+{
+	width: 280px;
+	height: 590px;
+	border: 1px solid green;
+	margin-top: 35px;
+}
+#dateinsert
+{
+	width: 670px;
+	height: 625px;
+	border: 1px solid green;
+	margin-top: 15px;
+}
+#biaoti
+{
+	font: normal 18px/35px 'Microsoft YaHei';
+	width: 120px;
+	height: 35px;
+	text-align: center;
+	border: 2px solid #8CEA00;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+#indexitem
+{
+	text-align: left;
+	margin-top: 10px;
+	margin-left: 70px ;
+	line-height: 3em;
+}
+#name
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13pt;
+
+	margin-left: 10px;
+}
+#itemtable 
+{
+	line-height: 67px;
+	color: #000000;
+}

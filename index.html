@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<head>
+<title>用户登陆</title>
+<link href="css/user_login.css" rel="stylesheet" media="screen" type="text/css" />  
+<script src="js/jquery-1.7.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="main" style="width:1000px; height: auto;margin:0 auto;" align="center">
+       <div id="title"><img src="img/title1.png" /></div>     
+       <div id="left"><img src="img/pp1.png" /></div> 
+       <div id="right">
+           <div id="bubble"><img src="img/pp2.png" /></div>
+           <div id="login" class="gradient">  
+                <div id="logintop"><img src="img/loginsys.png" /></div>     
+                <div id="usrname"><label>用户名：</label><input class="" id="account" name="username" type="text" autofocus /></div>
+                <div id="usrpass"><label>密&nbsp;&nbsp;&nbsp;码：</label><input id="password" name="pwd" type="password" /></div>              
+               <div id="loginbtn" onclick="login()">登录</div>
+               <div id="registerbtn">注册</div>
+         </div>
+    </div>
+  </div>
+ <script>
+  $("input").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#loginbtn").click();
+        $("#loginbtn").css("background-color","#4db22f");
+    }
+
+   });
+    //登陆
+    function login(){
+        var name=document.getElementById('account').value;
+        var pass=document.getElementById('password').value;
+        if(name==""){
+            alert("请输入用户名！");
+            return;
+        }else if(/[^a-z]/gi.test(name)){
+            alert("用户名必须为英文字母！");
+            document.getElementById('inputname').value="";
+            return;
+        }
+        //密码检测
+        if(pass==""){
+            alert("请输入密码！");
+            return;
+        }
+        var method="login";
+        var params={method:method,usrname:name,password:pass};
+        
+        $.ajax({
+        url:'connect/action.php',
+        type:'GET',
+        data:params,
+     
+        success:function(msg){
+            var txt=msg;
+
+        if (txt=="欢迎访问...")
+        {
+         sessionStorage.setItem('usrname',name);
+         window.open("main.html","_self")}
+         else
+         {
+            alert("用户名错误或密码错误！");
+            return;
+         }
+
+        },
+        
+        async:true
+       });
+     
+
+    }
+
+    </script>
+</body>
+</html>

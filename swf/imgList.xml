@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<imgList>
+<pic>
+<list path="img/banner1.jpg" >http://www.alixixi.com/</list>
+<list path="img/banner2.jpg" >http://www.alixixi.com/</list>
+<list path="img/banner3.jpg" >http://www.alixixi.com/</list>
+<list path="img/banner4.jpg" >http://www.alixixi.com/</list>
+<list path="img/banner5.jpg" >http://www.alixixi.com/</list>
+</pic>
+<rollTime fade_in="10">4</rollTime>
+<text font="Arial" size="12" bold="true" color="0xffffff"></text>
+</imgList>

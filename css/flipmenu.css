@@ -1,0 +1,43 @@
+  /* 生态城介绍左侧导航栏的css文件*/            
+
+               .flipmenu {
+               font-family: Arial,Helvetica,sans-serif;
+               font-size: 14pt;
+               font-weight: bold;
+               position: relative;
+               padding: 15px;
+               }
+               
+               
+               .flipmenu_box {
+               overflow: hidden;
+               position: relative;
+               padding: 0px;
+               margin: 0px;
+               }
+               
+               .flipmenu_link, .flipmenu_link_over, .flipmenu_link_active
+               {
+               text-decoration: none;
+               text-transform: uppercase;
+               color: #4D4D4D;
+               cursor: pointer;
+               white-space: pre;
+               position: absolute;
+               }
+               
+               .flipmenu_link {
+               top: 0px;
+               left: 0px;
+	       right: 10px;
+               }
+               
+               .flipmenu_link_over, .flipmenu_link_active
+               {
+               color: #840000;
+               }
+               #wrap {
+               margin-top : 10px;
+               width : 200px;
+               }
+

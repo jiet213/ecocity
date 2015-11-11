@@ -1,0 +1,43 @@
+ /*植被类型和生态景观导航栏的css文件*/
+ #divinfo
+        {
+            height: 229px;
+            float: none;
+            /*background-color: #F0FFFF;*/
+        }
+        #divinfo ul
+        {
+            margin-left: 10px;
+            display: block;
+            height: 219px;
+            margin-top: 5px;
+            text-align: left;
+            line-height: 1.5em;
+        }
+        #divinfo ul li
+        {
+            display: block;
+            margin-top: 8px;
+            margin-right: 10px;
+            padding-left: 10px;
+            border: 1px solid white; 
+        }
+        #divinfo ul li img
+        {
+            width: 21px;
+            height: 13px;
+        }
+        #divinfo ul li a
+        {
+			color: #215FB1;
+        }
+        
+        #right iframe
+        {
+        	position: inherit; 
+        	z-index: inherit; 
+        	width: 665px; 
+        	height: 640px; 
+        	float: right;
+    margin-left: 0px;
+}

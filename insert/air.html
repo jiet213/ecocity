@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<link href="../css/insert.css" rel="stylesheet" media="screen" type="text/css" />
+<script src="../js/date.js" type="text/javascript"></script>
+<script src="../js/jquery-1.9.1.js"></script>
+<script  type="text/javascript" charset="utf-8">
+  var login;
+  login=sessionStorage.getItem("usrname");
+  if (login==null)
+  {
+     window.location.href="../index.html"; 
+  }
+</script>
+</head>
+<body>
+<center>
+	<div id="main">
+		<div id="name">环境空气数据录入</div>
+		<div id="content">
+			<form name="frmInsert" action="air.php" method="post"  onsubmit="return docheck_Air();">
+				<table id="table1">
+					<colgroup width="20%" span="5"></colgroup>
+					<tr>
+						<td>站点：</td>
+						<td><input type="text" required="required" name="Sample" class="text" onfocus="focusS(this)" /></td>
+						<td></td>
+						<td>监测时段：</td>
+						<td>
+							<select name="Period" id="period">
+								<option value="null">请选择</option>
+								<option value="first">第一时段</option>
+								<option value="second">第二时段</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="5"></td>
+					</tr>
+					<tr>
+						<td>PM10：</td>
+						<td><input type="number" required="required" class="text" min="1" name="PM10" value="10" onfocus="focusS(this)" onblur="blurI(this)" /></td>
+						<td></td>
+						<td>PM2.5：</td>
+						<td><input type="number" required="required" class="text" min="1" name="PM25" value="10" onfocus="focusS(this)" onblur="blurI(this)" /></td>
+					</tr>
+					<tr><td colspan="5"></td></tr>
+					<tr>
+						<td>SO2：</td>
+						<td><input type="number" required="required" class="text" min="1" name="SO2" value="10" onfocus="focusS(this)" onblur="blurI(this)" /></td>
+						<td></td>
+						<td>NO2：</td>
+						<td><input type="number" required="required" class="text" min="1" name="NO2" value="10" onfocus="focusS(this)" onblur="blurI(this)" /></td>
+					</tr>
+					<tr><td colspan="5"></td></tr>
+					<tr>
+						<td>月份：</td>
+						<td>
+							<select name="Month" id="month">
+								<option value="null">请选择</option>
+								<option value="2013.09">2013年9月</option>
+								<option value="2013.10">2013年10月</option>
+								<option value="2013.11">2013年11月</option>
+								<option value="2013.12">2013年12月</option>
+								<option value="2014.01">2014年1月</option>
+								<option value="2014.02">2014年2月</option>
+								<option value="2014.03">2014年3月</option>
+								<option value="2014.04">2014年4月</option>
+								<option value="2014.05">2014年5月</option>
+								<option value="2014.06">2014年6月</option>
+								<option value="2014.07">2014年7月</option>
+								<option value="2014.08">2014年8月</option>
+								<option value="2014.09">2014年9月</option>
+								<option value="2014.10">2014年10月</option>
+								<option value="2014.11">2014年11月</option>
+								<option value="2014.12">2014年12月</option>
+							</select>
+						</td>
+						<td></td>
+						<td>天：</td>
+						<td>
+							<select name="Day" id="day">
+								<option value="null">请选择</option>
+								<option value="1">1 日</option>
+								<option value="2">2 日</option>
+								<option value="3">3 日</option>
+								<option value="4">4 日</option>
+								<option value="5">5 日</option>
+								<option value="6">6 日</option>
+								<option value="7">7 日</option>
+								<option value="8">8 日</option>
+								<option value="9">9 日</option>
+								<option value="10">10 日</option>
+								<option value="11">11 日</option>
+								<option value="12">12 日</option>
+								<option value="13">13 日</option>
+								<option value="14">14 日</option>
+								<option value="15">15 日</option>
+								<option value="16">16 日</option>
+								<option value="17">17 日</option>
+								<option value="18">18 日</option>
+								<option value="19">19 日</option>
+								<option value="20">20 日</option>
+								<option value="21">21 日</option>
+								<option value="22">22 日</option>
+								<option value="23">23 日</option>
+								<option value="24">24 日</option>
+								<option value="25">25 日</option>
+								<option value="25">25 日</option>
+								<option value="26">26 日</option>
+								<option value="27">27 日</option>
+								<option value="28">28 日</option>
+								<option value="29">29 日</option>
+								<option value="30">30 日</option>
+								<option value="31">31 日</option>
+							</select>
+
+						</td>
+					</tr>
+					<tr><td colspan="5"></td></tr>
+					<tr>
+						<td colspan="2"><input type="submit" value="确 定" id="btn" name="subtn" /></td>
+						<td></td>
+						<td colspan="2"><input type="reset" value="重 置" id="btn" name="rebtn" /></td>
+					</tr>
+				</table>
+			</form>	
+			<div id="tips">
+				<div id="beizhu">
+					备注：<br>
+					1.&nbsp;&nbsp;输入正确的监测站点，并选择监测时间(到日)；<br>
+					2.&nbsp;&nbsp;输入各监测指标的监测值(整数)；<br>
+					3.&nbsp;&nbsp;录入数据前需要确认所录入的信息。
+				</div>
+			</div>
+		</div>
+	<div>
+</center>
+</body>
+</html>
